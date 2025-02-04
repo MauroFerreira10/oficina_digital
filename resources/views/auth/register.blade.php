@@ -24,6 +24,16 @@
                                 <option value="admin">Administrador</option>
                             </select>
                         </div>
+                        <div class="mb-3">
+                            <label for="role" class="form-label">Tipo de Usuário</label>
+                            <select class="form-control" name="role" required>
+                                <option value="cliente">Cliente</option>
+                                <option value="tecnico">Técnico</option>
+                                <option value="secretario">Secretário</option>
+                                <option value="administrador">Administrador</option>
+                                <option value="gerente">Gerente</option>
+                            </select>
+                        </div>
 
 
                         <div class="form-group">

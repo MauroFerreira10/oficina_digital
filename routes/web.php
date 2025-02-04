@@ -8,6 +8,15 @@ use App\Http\Controllers\ViaturaController;
 use App\Http\Controllers\ServicoController;
 use App\Models\Servico;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PrecoController;
+use App\Http\Controllers\AdminController;
+
+
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+
+Route::get('/precos', [PrecoController::class, 'index'])->name('precos.index');
+
 
 
 
@@ -29,6 +38,22 @@ Route::middleware(['auth'])->group(function () {
     Route::middleware(['auth'])->group(function () {
         Route::get('/cliente/viaturas', [ViaturaController::class, 'index'])->name('cliente.viaturas');
     });
+    Route::middleware(['auth', 'checkrole:administrador'])->group(function () {
+        Route::get('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
+    });
+
+    Route::middleware(['auth', 'checkrole:secretario'])->group(function () {
+        Route::get('/secretario', [SecretarioController::class, 'index'])->name('secretario.dashboard');
+    });
+
+    Route::middleware(['auth', 'checkrole:tecnico'])->group(function () {
+        Route::get('/tecnico', [TecnicoController::class, 'index'])->name('tecnico.dashboard');
+    });
+
+    Route::middleware(['auth', 'checkrole:cliente'])->group(function () {
+        Route::get('/cliente', [ClienteController::class, 'index'])->name('cliente.dashboard');
+    });
+
     Route::resource('viaturas', ViaturaController::class)->middleware('auth');
 
     Route::middleware(['role:admin'])->group(function () {
