@@ -26,7 +26,7 @@
         <!-- Card de Serviço: Troca de Óleo -->
         <div class="col-md-4 mb-4">
             <div class="card h-100 shadow-sm">
-                <img src="https://source.unsplash.com/400x300/?oil,car" class="card-img-top" alt="Troca de Óleo">
+                <img src="/images/troca_de_oleo.jpg" class="card-img-top" alt="Troca de Óleo">
                 <div class="card-body">
                     <h5 class="card-title">Troca de Óleo</h5>
                     <p class="card-text">Mantenha o seu motor em perfeito funcionamento com nossa troca de óleo especializada.</p>
@@ -36,7 +36,7 @@
         <!-- Card de Serviço: Alinhamento -->
         <div class="col-md-4 mb-4">
             <div class="card h-100 shadow-sm">
-                <img src="https://source.unsplash.com/400x300/?alignment,car" class="card-img-top" alt="Alinhamento">
+                <img src="/images/alinhamento.jpg" class="card-img-top" alt="Alinhamento">
                 <div class="card-body">
                     <h5 class="card-title">Alinhamento</h5>
                     <p class="card-text">Serviço de alinhamento e balanceamento para maior segurança e conforto na direção.</p>
@@ -46,7 +46,7 @@
         <!-- Card de Serviço: Pintura -->
         <div class="col-md-4 mb-4">
             <div class="card h-100 shadow-sm">
-                <img src="https://source.unsplash.com/400x300/?car,painting" class="card-img-top" alt="Pintura">
+                <img src="/images/coisas.jpg" class="card-img-top" alt="Pintura">
                 <div class="card-body">
                     <h5 class="card-title">Pintura Automotiva</h5>
                     <p class="card-text">Renove a aparência do seu veículo com nossa pintura automotiva de alta qualidade.</p>
